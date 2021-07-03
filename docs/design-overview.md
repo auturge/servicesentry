@@ -2,8 +2,14 @@
 
 <h1 align="center">ServiceSentry Design Overview</h1>
 
-<div style="text-align:center"><img src="https://img.shields.io/static/v1?label=WIP:&message=Work-in-Progress&color=blueviolet" title="This draft is a work in progress and is being provided for information purposes only.&#10;&#10;Because it is a work in progress, there are parts that are either missing or will be revised; the content will change. &#10;&#10;Please, do not cite without the author’s permission."
-/></div>
+> [![Work In Progress][WIP-badge]](#top)
+>
+> This draft is a work in progress and is being provided for information purposes only.
+>
+> Because it is a work in progress, there are parts that are either missing or will be revised; the content will change. 
+>
+> Please, do not cite without the author’s permission.
+
 
 ## Table of Contents ##
 - [Purpose of ServiceSentry](#purpose-of-servicesentry)
@@ -14,7 +20,6 @@
   - [Milestone 2][mile2]
 	- [Warden](#warden)
     - [Oversight](#oversight)
-- [Project Tracking](#project-tracking)
 
 <a href="#top">(go to top)</a>
 
@@ -65,7 +70,7 @@ For more details on specific requirements, see the requirements pages.
 
 ----
 
-[WIP-badge]: https://img.shields.io/static/v1?label=WIP:&message=Work-in-Progress&color=blueviolet
+[WIP-badge]: https://img.shields.io/static/v1?label=WIP:&message=Work-in-Progress&color=blueviolet "This draft is a work in progress and is being provided for information purposes only.&#10;&#10;Because it is a work in progress, there are parts that are either missing or will be revised; the content will change. &#10;&#10;Please, do not cite without the author’s permission."
 
 [mile1]: #Milestone-1-Service-Agent-and-Client-Client
 [mile2]: #Milestone-2-Ecosystem-Control-Warden-and-web-client-oversight

@@ -2,8 +2,14 @@
 
 <h1 align="center">ServiceSentry Requirements</h1>
 
-<div style="text-align:center"><img src="https://img.shields.io/static/v1?label=WIP:&message=Work-in-Progress&color=blueviolet" title="This draft is a work in progress and is being provided for information purposes only.&#10;&#10;Because it is a work in progress, there are parts that are either missing or will be revised; the content will change. &#10;&#10;Please, do not cite without the author’s permission."
-/></div>
+> [![Work In Progress][WIP-badge]](#top)
+>
+> This draft is a work in progress and is being provided for information purposes only.
+>
+> Because it is a work in progress, there are parts that are either missing or will be revised; the content will change. 
+>
+> Please, do not cite without the author’s permission.
+
 
 ## Table of Contents ##
 - [Requirements](#requirements)
@@ -47,3 +53,4 @@
 
 ----
 
+[WIP-badge]: https://img.shields.io/static/v1?label=WIP:&message=Work-in-Progress&color=blueviolet "This draft is a work in progress and is being provided for information purposes only.&#10;&#10;Because it is a work in progress, there are parts that are either missing or will be revised; the content will change. &#10;&#10;Please, do not cite without the author’s permission."
