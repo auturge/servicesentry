@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+
+  <!-- Make sure that TargetFrameworkVersion is ALSO in the first PropertyGroup 
+	of each Project file.  This will make sure that the VS IDE knows which 
+	version of the .NET Framework to call. -->
+	<PropertyGroup Label="FrameworkVersion">
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+  </PropertyGroup>
+
+  <!-- Front Matter and Macros -->
+  <PropertyGroup Label="FrontMatterAndMacros">
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+
+    <ProjectOrAssemblyName Condition="'$(AssemblyName)'==''">$(ProjectName)</ProjectOrAssemblyName>
+    <ProjectOrAssemblyName Condition="'$(ProjectName)'==''">$(AssemblyName)</ProjectOrAssemblyName>
+
+    <ShortPlatformName>x86</ShortPlatformName>
+    <ShortPlatformName Condition="'$(Platform)'=='Any CPU'">x86</ShortPlatformName>
+    <ShortPlatformName Condition="'$(Platform)'=='x64'">x64</ShortPlatformName>
+  </PropertyGroup>
+
+
+  <PropertyGroup Label="Additional Locations">
+    <FinalBuildPlatformPath>$(SolutionDir)\build\$(ShortPlatformName)\</FinalBuildPlatformPath>
+    <FinalDistPlatformPath>$(SolutionDir)\dist\$(ShortPlatformName)\</FinalDistPlatformPath>
+
+    <!-- This is another folder where the final, built objects will be copied to. -->
+    <FinalBuildLocation>$(FinalBuildPlatformPath)$(Configuration)\</FinalBuildLocation>
+    <FinalDistLocation>$(FinalDistPlatformPath)$(Configuration)\</FinalDistLocation>
+	</PropertyGroup>
+  
+	<PropertyGroup Label="IntermediateOutputSettings">
+		<OutputPath>$(FinalBuildLocation)</OutputPath>
+		<OutputPath Condition =" '$(OutputType)' == 'Library' ">$(FinalBuildLocation)</OutputPath>
+		<OutputPath Condition =" '$(OutputType)' == 'Exe' ">$(FinalBuildLocation)</OutputPath>
+		<OutputPath Condition =" '$(OutputType)' == 'WinExe' ">$(FinalBuildLocation)</OutputPath>
+		<OutputPath Condition =" '$(OutputType)' == 'Package' ">$(FinalDistLocation)</OutputPath>
+		
+		<!-- Leave this last -->
+		<BaseIntermediateOutputPath>$(OutputPath)obj\$(AssemblyName)\</BaseIntermediateOutputPath>
+		<IntermediateOutputPath Condition=" '$(PlatformName)' == 'AnyCPU' ">$(BaseIntermediateOutputPath)\</IntermediateOutputPath>
+		<IntermediateOutputPath Condition=" '$(PlatformName)' != 'AnyCPU' ">$(BaseIntermediateOutputPath)$(PlatformName)\</IntermediateOutputPath>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+		<DebugType>full</DebugType>
+		<DebugSymbols>true</DebugSymbols>
+		<Optimize>false</Optimize>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>4</WarningLevel>
+		<DefineConstants>DEBUG;TRACE</DefineConstants>
+		<Prefer32Bit>false</Prefer32Bit>
+		<UseVSHostingProcess>true</UseVSHostingProcess>
+		<GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+	</PropertyGroup>
+	
+	<PropertyGroup Condition="'$(Configuration)' == 'Release'">
+		<DebugType>pdbonly</DebugType>
+		<DebugSymbols>true</DebugSymbols>
+		<Optimize>true</Optimize>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>4</WarningLevel>
+		<DefineConstants>TRACE</DefineConstants>
+		<Prefer32Bit>false</Prefer32Bit>
+		<GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+	</PropertyGroup>
+
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+
+	<PropertyGroup Label="PreBuildEvents">
+		<PreBuildEvent>rem echo f | xcopy /Y /f "$(SolutionDir)..\Included Files\*.xml" "$(TargetDir)*.xml" &gt;nul
+		</PreBuildEvent>
+	</PropertyGroup>
+	
+	<PropertyGroup Label="PostBuildEvents">
+		<RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+		<PostBuildEvent>
+      echo.
+      echo. MSBuildProjectFullPath: $(MSBuildProjectFullPath)
+      echo. Platform:			$(Platform)
+      echo.
+      echo. TargetDir:    $(TargetDir)
+      echo. FinalOut:     $(FinalDistLocation)
+      echo.
+      robocopy /is /it /w:3 /r:1 "$(TargetDir)." "$(FinalDistLocation)." "$(TargetName).*" 2&gt;&amp;1
+				if %errorlevel% LEQ 7 exit 0 else exit $errorlevel%
+			</PostBuildEvent>
+	</PropertyGroup>
+</Project>
