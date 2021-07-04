@@ -3,7 +3,6 @@ using NUnit.Framework;
 
 namespace ServiceSentry.Testing
 {
-    [TestFixture]
     public partial class Tests
     {
         [AssertionMethod]
