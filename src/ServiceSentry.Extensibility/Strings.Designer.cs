@@ -22,7 +22,7 @@ namespace ServiceSentry.Extensibility {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Strings {
+    public class Strings {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace ServiceSentry.Extensibility {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ServiceSentry.Extensibility.Strings", typeof(Strings).Assembly);
@@ -51,7 +51,7 @@ namespace ServiceSentry.Extensibility {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace ServiceSentry.Extensibility {
         /// <summary>
         ///   Looks up a localized string similar to ServiceSentry.Agent.
         /// </summary>
-        internal static string _AgentServiceName {
+        public static string _AgentServiceName {
             get {
                 return ResourceManager.GetString("_AgentServiceName", resourceCulture);
             }
@@ -72,7 +72,7 @@ namespace ServiceSentry.Extensibility {
         /// <summary>
         ///   Looks up a localized string similar to ServiceSentry.
         /// </summary>
-        internal static string _ApplicationName {
+        public static string _ApplicationName {
             get {
                 return ResourceManager.GetString("_ApplicationName", resourceCulture);
             }
@@ -81,7 +81,7 @@ namespace ServiceSentry.Extensibility {
         /// <summary>
         ///   Looks up a localized string similar to auturge.
         /// </summary>
-        internal static string _CompanyName {
+        public static string _CompanyName {
             get {
                 return ResourceManager.GetString("_CompanyName", resourceCulture);
             }
@@ -90,7 +90,7 @@ namespace ServiceSentry.Extensibility {
         /// <summary>
         ///   Looks up a localized string similar to \\Extensions.
         /// </summary>
-        internal static string _DefaultExtensionsSubfolder {
+        public static string _DefaultExtensionsSubfolder {
             get {
                 return ResourceManager.GetString("_DefaultExtensionsSubfolder", resourceCulture);
             }
@@ -99,7 +99,7 @@ namespace ServiceSentry.Extensibility {
         /// <summary>
         ///   Looks up a localized string similar to Activating extensions..
         /// </summary>
-        internal static string Debug_ActivatingExtensions {
+        public static string Debug_ActivatingExtensions {
             get {
                 return ResourceManager.GetString("Debug_ActivatingExtensions", resourceCulture);
             }
@@ -108,7 +108,7 @@ namespace ServiceSentry.Extensibility {
         /// <summary>
         ///   Looks up a localized string similar to Logger configured..
         /// </summary>
-        internal static string Debug_LoggerConfigured {
+        public static string Debug_LoggerConfigured {
             get {
                 return ResourceManager.GetString("Debug_LoggerConfigured", resourceCulture);
             }
@@ -117,7 +117,7 @@ namespace ServiceSentry.Extensibility {
         /// <summary>
         ///   Looks up a localized string similar to New logger initialized..
         /// </summary>
-        internal static string Debug_LoggerInitialized {
+        public static string Debug_LoggerInitialized {
             get {
                 return ResourceManager.GetString("Debug_LoggerInitialized", resourceCulture);
             }
@@ -126,7 +126,7 @@ namespace ServiceSentry.Extensibility {
         /// <summary>
         ///   Looks up a localized string similar to File does not exist..
         /// </summary>
-        internal static string Error_FileDNE {
+        public static string Error_FileDNE {
             get {
                 return ResourceManager.GetString("Error_FileDNE", resourceCulture);
             }
@@ -135,7 +135,7 @@ namespace ServiceSentry.Extensibility {
         /// <summary>
         ///   Looks up a localized string similar to Folder does not exist..
         /// </summary>
-        internal static string Error_FolderDNE {
+        public static string Error_FolderDNE {
             get {
                 return ResourceManager.GetString("Error_FolderDNE", resourceCulture);
             }
@@ -144,7 +144,7 @@ namespace ServiceSentry.Extensibility {
         /// <summary>
         ///   Looks up a localized string similar to URI is invalid..
         /// </summary>
-        internal static string Error_InvalidURI {
+        public static string Error_InvalidURI {
             get {
                 return ResourceManager.GetString("Error_InvalidURI", resourceCulture);
             }
@@ -153,7 +153,7 @@ namespace ServiceSentry.Extensibility {
         /// <summary>
         ///   Looks up a localized string similar to Parameter partialPaths is of type List&lt;string&gt;, but was passed with zero items..
         /// </summary>
-        internal static string Error_PartialPathsPassedWithNoItems {
+        public static string Error_PartialPathsPassedWithNoItems {
             get {
                 return ResourceManager.GetString("Error_PartialPathsPassedWithNoItems", resourceCulture);
             }
@@ -162,7 +162,7 @@ namespace ServiceSentry.Extensibility {
         /// <summary>
         ///   Looks up a localized string similar to Command name cannot be an empty string..
         /// </summary>
-        internal static string EXCEPTION_CommandNameCannotBeEmpty {
+        public static string EXCEPTION_CommandNameCannotBeEmpty {
             get {
                 return ResourceManager.GetString("EXCEPTION_CommandNameCannotBeEmpty", resourceCulture);
             }
@@ -171,7 +171,7 @@ namespace ServiceSentry.Extensibility {
         /// <summary>
         ///   Looks up a localized string similar to Filename is null..
         /// </summary>
-        internal static string EXCEPTION_FilenameIsNull {
+        public static string EXCEPTION_FilenameIsNull {
             get {
                 return ResourceManager.GetString("EXCEPTION_FilenameIsNull", resourceCulture);
             }
@@ -180,7 +180,7 @@ namespace ServiceSentry.Extensibility {
         /// <summary>
         ///   Looks up a localized string similar to Invalid ordinal..
         /// </summary>
-        internal static string EXCEPTION_InvalidOrdinal {
+        public static string EXCEPTION_InvalidOrdinal {
             get {
                 return ResourceManager.GetString("EXCEPTION_InvalidOrdinal", resourceCulture);
             }
@@ -189,7 +189,7 @@ namespace ServiceSentry.Extensibility {
         /// <summary>
         ///   Looks up a localized string similar to LogLevel does not exist: &apos;{0}&apos;.
         /// </summary>
-        internal static string EXCEPTION_LevelNotUnderstood {
+        public static string EXCEPTION_LevelNotUnderstood {
             get {
                 return ResourceManager.GetString("EXCEPTION_LevelNotUnderstood", resourceCulture);
             }
@@ -198,7 +198,7 @@ namespace ServiceSentry.Extensibility {
         /// <summary>
         ///   Looks up a localized string similar to LogLevel is null..
         /// </summary>
-        internal static string EXCEPTION_LogLevelIsNull {
+        public static string EXCEPTION_LogLevelIsNull {
             get {
                 return ResourceManager.GetString("EXCEPTION_LogLevelIsNull", resourceCulture);
             }
@@ -207,7 +207,7 @@ namespace ServiceSentry.Extensibility {
         /// <summary>
         ///   Looks up a localized string similar to Path directory is null..
         /// </summary>
-        internal static string EXCEPTION_PathDirectoryIsNull {
+        public static string EXCEPTION_PathDirectoryIsNull {
             get {
                 return ResourceManager.GetString("EXCEPTION_PathDirectoryIsNull", resourceCulture);
             }
@@ -216,7 +216,7 @@ namespace ServiceSentry.Extensibility {
         /// <summary>
         ///   Looks up a localized string similar to Path root is null..
         /// </summary>
-        internal static string EXCEPTION_PathRootIsNull {
+        public static string EXCEPTION_PathRootIsNull {
             get {
                 return ResourceManager.GetString("EXCEPTION_PathRootIsNull", resourceCulture);
             }
@@ -225,7 +225,7 @@ namespace ServiceSentry.Extensibility {
         /// <summary>
         ///   Looks up a localized string similar to Unknown log level: {0}.
         /// </summary>
-        internal static string EXCEPTION_UnknownLogLevel {
+        public static string EXCEPTION_UnknownLogLevel {
             get {
                 return ResourceManager.GetString("EXCEPTION_UnknownLogLevel", resourceCulture);
             }
@@ -234,7 +234,7 @@ namespace ServiceSentry.Extensibility {
         /// <summary>
         ///   Looks up a localized string similar to EXCEPTION.
         /// </summary>
-        internal static string Header_Exception {
+        public static string Header_Exception {
             get {
                 return ResourceManager.GetString("Header_Exception", resourceCulture);
             }
@@ -243,7 +243,7 @@ namespace ServiceSentry.Extensibility {
         /// <summary>
         ///   Looks up a localized string similar to Message.
         /// </summary>
-        internal static string Header_Message {
+        public static string Header_Message {
             get {
                 return ResourceManager.GetString("Header_Message", resourceCulture);
             }
@@ -252,7 +252,7 @@ namespace ServiceSentry.Extensibility {
         /// <summary>
         ///   Looks up a localized string similar to Stack TRACE.
         /// </summary>
-        internal static string Header_StackTrace {
+        public static string Header_StackTrace {
             get {
                 return ResourceManager.GetString("Header_StackTrace", resourceCulture);
             }
@@ -261,7 +261,7 @@ namespace ServiceSentry.Extensibility {
         /// <summary>
         ///   Looks up a localized string similar to {0}: {1}.
         /// </summary>
-        internal static string HeaderedProperty {
+        public static string HeaderedProperty {
             get {
                 return ResourceManager.GetString("HeaderedProperty", resourceCulture);
             }
@@ -270,7 +270,7 @@ namespace ServiceSentry.Extensibility {
         /// <summary>
         ///   Looks up a localized string similar to Debug.
         /// </summary>
-        internal static string LogLevel_Debug {
+        public static string LogLevel_Debug {
             get {
                 return ResourceManager.GetString("LogLevel_Debug", resourceCulture);
             }
@@ -279,7 +279,7 @@ namespace ServiceSentry.Extensibility {
         /// <summary>
         ///   Looks up a localized string similar to Error.
         /// </summary>
-        internal static string LogLevel_Error {
+        public static string LogLevel_Error {
             get {
                 return ResourceManager.GetString("LogLevel_Error", resourceCulture);
             }
@@ -288,7 +288,7 @@ namespace ServiceSentry.Extensibility {
         /// <summary>
         ///   Looks up a localized string similar to Fatal.
         /// </summary>
-        internal static string LogLevel_Fatal {
+        public static string LogLevel_Fatal {
             get {
                 return ResourceManager.GetString("LogLevel_Fatal", resourceCulture);
             }
@@ -297,7 +297,7 @@ namespace ServiceSentry.Extensibility {
         /// <summary>
         ///   Looks up a localized string similar to Info.
         /// </summary>
-        internal static string LogLevel_Info {
+        public static string LogLevel_Info {
             get {
                 return ResourceManager.GetString("LogLevel_Info", resourceCulture);
             }
@@ -306,7 +306,7 @@ namespace ServiceSentry.Extensibility {
         /// <summary>
         ///   Looks up a localized string similar to Off.
         /// </summary>
-        internal static string LogLevel_Off {
+        public static string LogLevel_Off {
             get {
                 return ResourceManager.GetString("LogLevel_Off", resourceCulture);
             }
@@ -315,7 +315,7 @@ namespace ServiceSentry.Extensibility {
         /// <summary>
         ///   Looks up a localized string similar to TRACE.
         /// </summary>
-        internal static string LogLevel_TRACE {
+        public static string LogLevel_TRACE {
             get {
                 return ResourceManager.GetString("LogLevel_TRACE", resourceCulture);
             }
@@ -324,7 +324,7 @@ namespace ServiceSentry.Extensibility {
         /// <summary>
         ///   Looks up a localized string similar to Warn.
         /// </summary>
-        internal static string LogLevel_Warn {
+        public static string LogLevel_Warn {
             get {
                 return ResourceManager.GetString("LogLevel_Warn", resourceCulture);
             }
@@ -333,7 +333,7 @@ namespace ServiceSentry.Extensibility {
         /// <summary>
         ///   Looks up a localized string similar to ....
         /// </summary>
-        internal static string Noun_EllipsisChars {
+        public static string Noun_EllipsisChars {
             get {
                 return ResourceManager.GetString("Noun_EllipsisChars", resourceCulture);
             }
@@ -342,7 +342,7 @@ namespace ServiceSentry.Extensibility {
         /// <summary>
         ///   Looks up a localized string similar to Copy file.
         /// </summary>
-        internal static string Verb_CopyFile {
+        public static string Verb_CopyFile {
             get {
                 return ResourceManager.GetString("Verb_CopyFile", resourceCulture);
             }
@@ -351,7 +351,7 @@ namespace ServiceSentry.Extensibility {
         /// <summary>
         ///   Looks up a localized string similar to Open containing folder.
         /// </summary>
-        internal static string Verb_OpenContainingFolder {
+        public static string Verb_OpenContainingFolder {
             get {
                 return ResourceManager.GetString("Verb_OpenContainingFolder", resourceCulture);
             }
@@ -360,7 +360,7 @@ namespace ServiceSentry.Extensibility {
         /// <summary>
         ///   Looks up a localized string similar to /ServiceSentry.
         /// </summary>
-        internal static string Warden_BaseAddress {
+        public static string Warden_BaseAddress {
             get {
                 return ResourceManager.GetString("Warden_BaseAddress", resourceCulture);
             }
