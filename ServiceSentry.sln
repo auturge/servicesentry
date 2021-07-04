@@ -12,32 +12,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3F8A5762-347
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{39BE6D69-17A7-47A8-973A-66DF9570691F}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "docs", "docs\", "{5FF3ED6E-CDDC-42DC-A7E5-090E54447013}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_56786"
-		Debug.AspNetCompiler.PhysicalPath = "docs\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56786\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_56786"
-		Release.AspNetCompiler.PhysicalPath = "docs\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56786\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "56786"
-		SlnRelativePath = "docs\"
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceSentry.Extensibility", "src\ServiceSentry.Extensibility\ServiceSentry.Extensibility.csproj", "{B3B6E86E-6794-4713-AE2E-3714DA44D5D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceSentry.Extensibility.UnitTests", "tests\ServiceSentry.Extensibility.UnitTests\ServiceSentry.Extensibility.UnitTests.csproj", "{DECFD72F-BCCB-4ED9-9DE6-CA2B0DC76A04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceSentry.Extensibility.UnitTests", "tests\ServiceSentry.Extensibility.UnitTests\ServiceSentry.Extensibility.UnitTests.csproj", "{DECFD72F-BCCB-4ED9-9DE6-CA2B0DC76A04}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceSentry.Testing", "tests\ServiceSentry.Testing\ServiceSentry.Testing.csproj", "{6FB373A1-F7EA-4441-8D35-27B09E3013A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServiceSentry", "ServiceSentry", "{46D1F731-CFE1-42D0-B364-3251F69012D4}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{25FE6369-3E64-4FE9-AD9E-3708681D6134}"
+	ProjectSection(SolutionItems) = preProject
+		docs\design-overview.md = docs\design-overview.md
+		docs\requirements.md = docs\requirements.md
+		docs\RESTful API.md = docs\RESTful API.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,12 +39,6 @@ Global
 		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5FF3ED6E-CDDC-42DC-A7E5-090E54447013}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5FF3ED6E-CDDC-42DC-A7E5-090E54447013}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{5FF3ED6E-CDDC-42DC-A7E5-090E54447013}.Debug|x64.Build.0 = Debug|Any CPU
-		{5FF3ED6E-CDDC-42DC-A7E5-090E54447013}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{5FF3ED6E-CDDC-42DC-A7E5-090E54447013}.Release|x64.ActiveCfg = Debug|Any CPU
-		{5FF3ED6E-CDDC-42DC-A7E5-090E54447013}.Release|x64.Build.0 = Debug|Any CPU
 		{B3B6E86E-6794-4713-AE2E-3714DA44D5D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B3B6E86E-6794-4713-AE2E-3714DA44D5D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3B6E86E-6794-4713-AE2E-3714DA44D5D9}.Debug|x64.ActiveCfg = Debug|x64
@@ -84,9 +70,12 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{D00E45E5-12B3-435C-AB8E-6A780AF3DFA0} = {3F8A5762-347A-4D02-967E-C0DA271CF557}
 		{9D663DA5-B67F-4003-B4C8-CA9F4D9D5755} = {3F8A5762-347A-4D02-967E-C0DA271CF557}
+		{3F8A5762-347A-4D02-967E-C0DA271CF557} = {46D1F731-CFE1-42D0-B364-3251F69012D4}
+		{39BE6D69-17A7-47A8-973A-66DF9570691F} = {46D1F731-CFE1-42D0-B364-3251F69012D4}
 		{B3B6E86E-6794-4713-AE2E-3714DA44D5D9} = {3F8A5762-347A-4D02-967E-C0DA271CF557}
 		{DECFD72F-BCCB-4ED9-9DE6-CA2B0DC76A04} = {39BE6D69-17A7-47A8-973A-66DF9570691F}
 		{6FB373A1-F7EA-4441-8D35-27B09E3013A5} = {39BE6D69-17A7-47A8-973A-66DF9570691F}
+		{25FE6369-3E64-4FE9-AD9E-3708681D6134} = {46D1F731-CFE1-42D0-B364-3251F69012D4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D910F9D7-CFFF-4FE2-BD85-2FD4F78EC2FF}
